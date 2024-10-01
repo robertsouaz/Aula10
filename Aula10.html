@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula 10 - Formulario</title>
+</head>
+<body>
+    <div class="cadastro">
+        <h1>Formulario de Cadastro</h1>
+        <br> <br>
+        <form action="">
+            <label for="lnome">Nome: </label>
+                <input type="lnome" id="lnome" name="inome" placeholder="Digite seu nome" maxlength="30" autofocus required>
+            <br> <br>
+
+            <label for="ldtnasc">Data de nascimento: </label>
+                <input type="date" name="idtnasc" id="ldtnasc" min="1950-01-01" max="2000-01-01">
+            <br><br>
+
+            <label for="lidade">Idade: </label>
+                <input type="number" name="lidade" id="lidade" placeholder="99" pattern="[0-9]{2}">
+            <label for="lsexo">Sexo: </label>
+                <input type="radio" name="isexo" id="sexoF" 
+                    value="F" checked> Feminino
+                <input type="radio" name="isexo" id="sexoM" 
+                    value="M" > Masculino
+            <br>
+            <label for="imaior">Maior de idade: </label>
+                <input type="checkbox" name="dmaior" id="imaior">
+            <br><br>
+
+            <label for="lhorariodaentrevista">Horario da entrevista</label>
+                <input type="time" name="nhorariodaentrevista" id="lhorariodaentrevista">
+            <br><br>
+
+            <label for="lmail">E-mail: </label>
+                <input type="email" name="nmail" id="lmail">
+            <br><br>
+
+            <label for="idatalocal">Data/hora</label>
+                <input type="datetime-local" name="ndatalocal" id="idatalocal">
+            <br><br>
+
+            <label for="isitepessoal">Site pessoal</label>
+                <input type="url" name="nsitepessoal" id="isitepessoal" value="https://github.com/robertsouaz/Aula10">
+            <br><br>
+
+            <label for="itelefone">Telefone: </label>
+                <input type="tel" name="ntelefone" id="itelefone" placeholder="(99)99999-9999" pattern="[0-9]{2}[0-9]{5}[0-9]{4}">
+            <br><br>
+
+            <label for="Dataultimo">Data do Ultimo emprego</label>
+                <input type="month" name="idataultimo" id="Dataultimo">
+            <br><br>
+
+            <label for="itempo">Tempo de Experiencia</label>
+                <input list="itempo">
+                <datalist id="itempo">
+                    <option value="Menos de um ano">Novato</option>
+                    <option value="Entre 2 e 5 anos">Pleno</option>
+                    <option value="Mas de 5 anos">Senior</option>
+                </datalist>
+                <br>
+            <label for="lconhecimento">Conhecimento em Informatica:</label><br>
+                <select name="iconhecimento" id="lconhecimento" size="3">
+                <option value="Win">Windons</option>
+                <option value="html">HTML</option>
+                <option value="Java">Java</option>
+                <option value="Mac">Mac</option> 
+            </select>
+            <br><br>
+
+            <label for="lcor">Seleciona uma cor:</label>
+                <input type="color" name="ncolor" id="lcor">
+            <br><br>
+
+            <label for="iarquivo"></label>
+                <input type="file" name="narquivo" id="iarquivo" accept=".docx">
+                <br><br>
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+               <br><br>
+
+        </form>
+    </div>
+      
+</body>
+</html>
